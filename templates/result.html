@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prediction</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        border-style:ridge;
+    }
+    table td{
+        border: 2px solid black;
+        background-color: azure;
+    }
+    .pp{
+        width: 60%;
+        height: auto;
+        text-align:center;
+        margin-left: 20%;
+        background-color: azure
+    }
+    .t{
+        width: 60%;
+        height: auto;
+        text-align: center;
+        margin-left: 20%;
+        align-items: center;
+        background-color: azure
+    }
+    .t table{
+        margin-left: 40%;
+    }
+    .t table tr{
+        height: 30px;
+    }
+    .d{
+        width: 60%;
+        height: auto;
+        text-align:center;
+        margin-left: 20%;
+        background-color: azure
+         ;
+    }
+    .c{
+        width: 60%;
+        height: 400px;
+        align-items: center;
+        text-align: center;
+        margin-left: 20%;
+    }
+    img{
+        width: 400px;
+        height: 300px;
+    }
+    .header {
+  background-color: #7ed957;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+}
+
+.header button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: #7ed957; /* Change to bright green */
+  color: white; /* Change to white */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #72c84e; /* Adjust the brightness of hover color */
+}
+      .pre{
+        text-align: center;
+      }
+    
+</style>
+<body>
+    <div class="header">
+        <h1>PREDICTION</h1>
+        <a href="/"><button>Home</button></a>
+        <a href="/about"><button>About Us</button></a>
+      </div> 
+{% if data == 13 %}
+
+<div class="c">
+    <h1>RICE</h1>
+    <img src="/static/rice.jpg" alt="">
+</div>
+
+
+<div class="t" >  
+<h2>DESCRIPTION</h2>            
+<table>
+<tr>
+<td>Scientific name</td>
+<td>Oryza sativa</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>Cyperales</td>
+</tr>
+<tr>
+<td>Family</td>
+<td>Cyperales</td>
+</tr>
+<tr>
+<td>Genus</td>
+<td>Oryza</td>
+</tr>
+</table>
+</div>
+
+<div class="pp"> <h2>PLANTING PROCESS</h2>
+<p>Rice is always propagated by seed, which may be either broadcast or drilled directly in the field, or the seedlings may be grown in nurseries and transplanted. <br> Direct seeding is done in dry or puddled soil. In puddled soil, the (pre-germinated) seeds are broadcast. <br> The water level is kept at 0-5 cm under tropical conditions, but higher in temperate areas. <br>
+In dry soil, the seeds are sown after land preparation and covered lightly with soil by a tooth harrow. <br> Germination occurs after heavy continuous rains. In upland rice cultivation the land is prepared in the dry weather and the rice is broadcast or dibbled in with the advent of the rains. <br>
+<br> Floating rice is cultivated in areas subject to deep flooding and the seed is sown either dry or wet.
+</p>
+</div>
+
+<div class="d">
+<h2>DISEASES</h2>
+<h3>Category : Bacterial</h3>
+<h4>Bacterial leaf streak Xanthomonas oryzae</h4>
+<p><h4>Symptoms</h4> 
+Small, water-soaked streaks between leaf veins which are initially dark green and then turn translucent; streaks grow larger, coalesce and turn light brown in color; tiny beads of yellow colored bacterial exudate are common on the surface of the streaks; leaves turn brown and then gray-white in color before they die.
+<h4>Cause</h4> 
+Bacterium 
+<h4>Comments</h4> 
+Bacteria survive on infected seed and straw; bacteria may enter the plant through wounds; bacterial exudate can be spread in irrigation water; emergence of the disease is favored by high humidity and high temperatures; bacterial leaf streak is widespread in tropical Asia and West Africa 
+<h4>Management </h4>
+Control of bacterial leaf streak is dependent on the use of resistant rice varieties and on planting of treated seed <br></p>
+
+</div>
+<div>
+    
+</div>
+
+
+{% elif data == 9 %}
+    <div class="c">
+        <h1>MAIZE</h1>
+    <img src="../static/maize.jpg" alt="">
+    </div>
+{% elif data == 0 %}
+   <div class="c">
+    <h1>SOYABEANS</h1>
+    <img src="../static/soya.jpg" alt="">
+</div> 
+{% elif data == 3 %}
+   <div class="c">
+    <h1>BEANS</h1>
+    <img src="../static/bean.jpg" alt="">
+   </div>
+{% elif data == 12 %}
+    
+    <div class="c">
+        <h1>PEAS</h1>
+        <img src="static/peas.jpg" alt="">
+    </div>
+    
+    
+    <div class="t" >  
+    <h2>DESCRIPTION</h2>            
+    <table>
+    <tr>
+    <td>Scientific name</td>
+    <td>Pisum sativum</td>
+    </tr>
+    <tr>
+    <td>Order</td>
+    <td>Fabales</td>
+    </tr>
+    <tr>
+    <td>Family</td>
+    <td>Fabaceae</td>
+    </tr>
+    <tr>
+    <td>Genus</td>
+    <td>Pisum</td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="pp"> <h2>PLANTING PROCESS</h2>
+    <p>Peas are best direct-seeded right in the ground and do not like their roots disturbed. But transplanting is possible, if you start seeds in biodegradable pots; you will transplant the pot and all into the garden and the pot will disintegrate. <br>
+       Where spring is long and wet, plant seeds in raised garden beds. <br>
+       To speed germination, soak seeds in water overnight before planting. <br>
+       Sow seeds 1 inch deep (slightly deeper if soil is dry) and about 2 inches apart. Do not thin.
+       Plant rows 7 inches apart. <br>
+       In terms of crop rotation, do not plant peas in the same place more than once every 4 years.
+       Pea roots, like those of other legumes, fix nitrogen in the soil, making it available for other plants. <br> 
+       In terms of fertilizer, peas need phosphorus and potassium, but excess nitrogen will encourage foliage growth instead of flowers or pods. Learn more about soil amendments.
+       Bush peas can reach 18 to 30 inches tall.  Pole types can grow at least 4 to 6 feet tall. Both types benefit from support (especially bush peas above 2 feet and all pole peas). Install thin tree branches or twiggy sticks (pea sticks), trellises, chicken wire, strings, or netting before plants establish their shallow roots. See instructions on how to build trellises and supports for peas.
+       Water to keep the soil moist. If seeds wash out of the soil, poke them back into it.
+        
+    </p>
+    </div>
+    
+    <div class="d">
+    <h2>DISEASES</h2>
+    <h4>1. Fusarium Wilt</h4>
+    <p><h4>Symptoms</h4> 
+    Small, water-soaked streaks between leaf veins which are initially dark green and then turn translucent; streaks grow larger, coalesce and turn light brown in color; tiny beads of yellow colored bacterial exudate are common on the surface of the streaks; leaves turn brown and then gray-white in color before they die.
+    <h4>Cause</h4> 
+    Fungus 
+    <h4>Comments</h4> 
+    Plants wilt (sometimes on just one side) in daytime; leaves turn yellow (lower ones first); later, entire plant wilts/dies; growth is stunted; stem cross section reveals brown discoloration
+    <h4>Management </h4>
+    Destroy infected plants; avoid excessive nitrogen in soil; in acidic soils, raise pH to 7.0; choose resistant varieties; disinfect tools between use; practice crop rotation
+    <br>
+
+    <h4>2. Downy Mildew</h4>
+    <p><h4>Symptoms</h4> 
+    Small, water-soaked streaks between leaf veins which are initially dark green and then turn translucent; streaks grow larger, coalesce and turn light brown in color; tiny beads of yellow colored bacterial exudate are common on the surface of the streaks; leaves turn brown and then gray-white in color before they die.
+    <h4>Cause</h4> 
+    Fungus 
+    <h4>Comments</h4> 
+    Yellow, angular spots on upper leaf surfaces that turn brown; white/purple/gray cottony growth on leaf undersides only; distorted leaves; defoliation
+    <h4>Management </h4>
+    Remove plant debris; choose resistant varieties; ensure good air circulation; avoid overhead watering
+    </h4>
+
+</div>
+    
+{% elif data == 8 %}
+   <div class="c">
+    <h1>GROUNDNUTS</h1>
+    <img src="../static/g_nuts.jpg" alt="">
+   </div>
+{% elif data == 6 %}
+    <div class="c">
+        <h1>COWPEAS</h1>
+        <img src="../static/cow.jpg" alt="">
+    </div>
+{% elif data == 2 %}
+    <div class="c">
+        <h1>BANANA</h1>
+        <img src="../static/banana.jpg" alt="">
+    </div>
+{% elif data == 10 %}
+    <div class="c">
+        <h1>MANGO</h1>
+        <img src="../static/mango.jpg" alt="">
+    </div>
+{% elif data == 7 %}
+    
+    <div class="c">
+        <h1>GRAPES</h1>
+        <img src="static/grapes.jpg" alt="">
+    </div>
+    
+    
+    <div class="t" >  
+    <h2>DESCRIPTION</h2>            
+    <table>
+    <tr>
+    <td>Scientific name</td>
+    <td>Vitis vinifera</td>
+    </tr>
+    <tr>
+    <td>Order</td>
+    <td>Vitalea</td>
+    </tr>
+    <tr>
+    <td>Family</td>
+    <td>Vitaceae</td>
+    </tr>
+    <tr>
+    <td>Genus</td>
+    <td>Vitis</td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="pp"> <h2>PLANTING PROCESS</h2>
+    <p>	Grapevines should be planted in early spring after the date of the last hard freeze has passed. Vines are usually purchased as dormant, bare-root plants. <br>
+        Most grape varieties are self-fertile. To be sure, ask when you are buying vines if you will need more than one plant for pollination. <br>
+    	Select a site with full sun. If you do not have a spot with full sun, make sure it at least gets morning sun. A small amount of afternoon shade will not hurt. Your soil needs to be deep, well-drained, and loose. You also need good air circulation.
+    	Grape vines will need to be trained to some sort of support to grow upward. This will also cut the risk of disease. The support needs to be in place at planting. 
+        
+    </p>
+    </div>
+    
+     
+{% elif data == 14 %}
+    <h1>WATERMELON</h1>
+{% elif data == 1 %}
+<div class="c">
+    <h1>APPLE</h1>
+    <img src="static/apple.jpg" alt="">
+</div>
+
+
+<div class="t" >  
+<h2>DESCRIPTION</h2>            
+<table>
+<tr>
+<td>Scientific name</td>
+<td>Malus domestica</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>Rosales</td>
+</tr>
+<tr>
+<td>Family</td>
+<td>Rosaceae</td>
+</tr>
+<tr>
+<td>Genus</td>
+<td>Malus</td>
+</tr>
+</table>
+</div>
+
+<div class="pp"> <h2>PLANTING PROCESS</h2>
+<p>	Apple seeds need to be exposed to cool, moist conditions before they are ready to germinate and grow. <br> Sow them outdoors 1/2 inch deep in the fall, and the natural seasonal cycle will take care of the seed’s chilling needs for you. <br> Alternatively, place the seeds in moistened sand in a plastic container and keep the container in the fridge for 3 to 4 months. Then, sow them outdoors 1/2 inch deep once the threat of frost has passed. Once the seedling emerges, be sure to keep it well-watered and protected from pests.
+</p>
+</div>                     
+{% elif data == 11 %}
+    
+    <div class="c">
+        <h1>ORANGE</h1>
+        <img src="static/orange.jpg" alt="">
+    </div>
+    
+    
+    <div class="t" >  
+    <h2>DESCRIPTION</h2>            
+    <table>
+    <tr>
+    <td>Scientific name</td>
+    <td>Citrus x sinensis</td>
+    </tr>
+    <tr>
+    <td>Order</td>
+    <td>Sapindales</td>
+    </tr>
+    <tr>
+    <td>Family</td>
+    <td>Rutaceae</td>
+    </tr>
+    <tr>
+    <td>Genus</td>
+    <td>Citrus</td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="pp"> <h2>PLANTING PROCESS</h2>
+    <p>	
+    After unwrapping or removing the tree from its container, first inspect the root ball. <br> If the roots seem tangled or like they’re growing in circles, gently score up and down the sides of the root ball several times with a knife. This breaks up the bound roots and encourages them to grow outward.
+    <br>Dig a hole that’s about 1.5 times the width of the root ball and about as deep as the root ball is tall. Like most trees, citrus trees should be planted slightly above the depth that they were at in the container; planting too deeply can cause water to pool around the trunk, leading to rot and disease. Planting slightly higher than the surrounding soil ensures that water will run away from the trunk
+
+    </p>
+    </div> 
+{% elif data == 5 %}
+    
+    <div class="c">
+        <h1>COTTON</h1>
+        <img src="static/cotton.jpg" alt="">
+    </div>
+    
+    
+    <div class="t" >  
+    <h2>DESCRIPTION</h2>            
+    <table>
+    <tr>
+    <td>Scientific name</td>
+    <td>Gossypium ssp</td>
+    </tr>
+    <tr>
+    <td>Order</td>
+    <td>Malvales</td>
+    </tr>
+    <tr>
+    <td>Family</td>
+    <td>Malvaceae</td>
+    </tr>
+    <tr>
+    <td>Genus</td>
+    <td>Gossypium</td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="pp"> <h2>PLANTING PROCESS</h2>
+    <p>	
+    Cotton is propagated from seed by planting directly in a prepared field when growing conditions are favorable (suitable temperature, adequate rainfall etc). <br> Cotton should only be planted when the soil has warmed to at least 18.3°C (65°F). Generally, seeds should be sown at a depth of 0.25 cm (1 in), with 3–6 seed sown in each hole. <br> Ridging the soil is recommended as it helps to drain the plant in wet conditions and also to conserve water in dry conditions. Plant spacing depends on the variety but generally 20–100 cm (7.9–39.4 in) should be left between plants.
+    </p>
+    </div> 
+                 
+    {% elif data == 4 %}
+    
+    <div class="c">
+    <h1>COFFEE</h1>
+        <img src="../static/coffee .jpg" alt="">
+    </div>
+    
+    
+    <div class="t" >  
+    <h2>DESCRIPTION</h2>            
+    <table>
+    <tr>
+    <td>Scientific name</td>
+    <td>Coffea spp</td>
+    </tr>
+    <tr>
+    <td>Order</td>
+    <td>Gentiales</td>
+    </tr>
+    <tr>
+    <td>Family</td>
+    <td>Rubiaceae</td>
+    </tr>
+    <tr>
+    <td>Genus</td>
+    <td>Coffea</td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="pp"> <h2>PLANTING PROCESS</h2>
+    <p>	
+        The seedlings should be carefully placed in the center of the hole. The soil in the hole should be uniformly mixed with well decomposed manure to boost growth and root establishment. Pest and disease-free seedlings should be selected.
+        <br>Mulching:  This is the covering of topsoil between the coffee trees. A layer of organic mulch, such as dry leaves or grass, coffee husks, composted manure, maize stalks, and rice stalks, should be applied around the base of the seedling to help retain moisture and suppress weed growth. Mulching regulates soil moisture, controls soil erosion, and helps retain water.
+        <br>Watering: The newly planted seedlings should be watered immediately and regularly to ensure that the soil remains moist but not waterlogged. In dry spells or when the rains aren't regular, water bottle irrigation should be used, as this is the cheapest of all.
+        <br> Pruning:  At a later stage, when the plant has grown, pruning should be done to remove any weak, dead, unproductive, diseased, and broken branches and promote the growth of a strong central stem. Pruning reduces competition for nutrients and sunlight on the stem or plant and removes unproductive parts to help the plant grow vigorously. It should be carried out at the end of the harvesting season, just before flowering takes 
+</p>
+    </div> 
+    
+{% else %} 
+    <h1>Invalid input</h1>
+{% endif %}
+
+
+</body>
+</html>
