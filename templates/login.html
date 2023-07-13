@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login</title>
     <style>
       body {
         margin: 0;
@@ -24,20 +23,6 @@
         margin: 0;
       }
       
-      .header button {
-        padding: 5px 10px;
-        margin-right: 10px;
-        border: none;
-        background-color: white;
-        color: #7ed957;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      
-      .header button:hover {
-        background-color: #f2f2f2;
-      }
-      
       .form-container {
         background-color: white;
         max-width: 400px;
@@ -55,7 +40,8 @@
         margin-bottom: 20px;
       }
       
-      .form-container input[type="text"] {
+      .form-container input[type="text"],
+      .form-container input[type="password"] {
         width: 100%;
         padding: 10px;
         margin-bottom: 10px;
@@ -77,27 +63,38 @@
       .form-container input[type="submit"]:hover {
         background-color: #6ec946;
       }
+      
+      .form-container a {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        color: #7ed957;
+        text-decoration: none;
+      }
+      
+      .form-container a:hover {
+        text-decoration: underline;
+      }
     </style>
 </head>
 <body>
+
     <div class="header">
-      <h1>Crop Recommendation</h1>
-      <a href="/index"><button>Home</button></a>
-      <a href="/about"><button>About Us</button></a>
-      <a href="{{url_for('logout')}}"><button>Log out</button></a>
+      <h1>Login</h1>
     </div>
 
     <div class="form-container">
-      <p style="text-align: center; font-weight: bold; color: #7ed957;">Welcome to our Crop Recommendation System. This system uses advanced algorithms to analyze environmental factors such as temperature, humidity, pH, and rainfall to provide personalized crop recommendations.</p>
-      <form method="POST" action="{{url_for('home')}}">
-        <input type="text" placeholder="Temperature" name="a" required>
-        <input type="text" placeholder="Humidity" name="b" required>
-        <input type="text" placeholder="pH" name="c" required>
-        <input type="text" placeholder="Rainfall" name="d"  required>
-        <input type="submit" value="Prediction">
+      <p>Welcome to our Crop Recommendation System. <br> Please enter your login credentials below:</p>
+      <form method="POST" action="">
+        {{form.hidden_tag() }}
+        {{form.username}}
+        {{form.password}}
+        {{form.submit}}
       </form>
+
+      
+      <a href="{{url_for('register')}}">Dont have account? Register</a>
     </div>
-    
     
 </body>
 </html>
